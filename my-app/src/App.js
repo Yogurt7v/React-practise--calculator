@@ -11,6 +11,9 @@ export const App = () => {
 			<div className="Calculator">
 				<div className="Container">
 					<div className="Display">{startNum}</div>
+					<div className="Clear">
+						<button className="Clear">C</button>
+					</div>
 					<div className="TwoBox">
 						<div className="Numbers">
 							{nums.map((num) => (
@@ -22,6 +25,9 @@ export const App = () => {
 								<button className="Operator">{op}</button>
 							))}
 						</div>
+					</div>
+					<div className="Result">
+						<button className="Result">=</button>
 					</div>
 				</div>
 			</div>

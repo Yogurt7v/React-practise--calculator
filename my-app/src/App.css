@@ -11,6 +11,9 @@ body {
 	color: blueviolet;
 	font-size: 26px;
 	margin-bottom: 20px;
+	border-bottom: 1px solid rgb(74, 74, 74);
+	border-radius: 0 0 15px 15px;
+	background-color: beige;
 }
 
 .Calculator {
@@ -28,6 +31,19 @@ body {
 	margin-top: 30px;
 	justify-content: center;
 	align-items: center;
+}
+
+.Display {
+	display: flex;
+	flex-direction: row-reverse;
+	margin: 10px 0 20px 0;
+	padding: 5px 20px;
+	font-size: 25px;
+	font-weight: 700;
+	width: 300px;
+	background-color: beige;
+	border: 1px solid rgb(74, 74, 74);
+	border-radius: 30px;
 }
 
 .TwoBox {
