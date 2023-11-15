@@ -10,6 +10,16 @@ body {
 	padding: 10px;
 	color: blueviolet;
 	font-size: 26px;
+	margin-bottom: 20px;
+}
+
+.Calculator {
+	margin-left: calc(50% - 200px);
+	width: 400px;
+	height: 600px;
+	border: 1px solid rgb(74, 74, 74);
+	border-radius: 15px;
+	background-color: azure;
 }
 
 .Container {

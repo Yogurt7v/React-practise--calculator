@@ -8,18 +8,20 @@ export const App = () => {
 	return (
 		<>
 			<header className="App-header">Calculator</header>
-			<div className="Container">
-				<div className="Display">{startNum}</div>
-				<div className="TwoBox">
-					<div className="Numbers">
-						{nums.map((num) => (
-							<button className="Number">{num}</button>
-						))}
-					</div>
-					<div className="Operators">
-						{ops.map((op) => (
-							<button className="Operator">{op}</button>
-						))}
+			<div className="Calculator">
+				<div className="Container">
+					<div className="Display">{startNum}</div>
+					<div className="TwoBox">
+						<div className="Numbers">
+							{nums.map((num) => (
+								<button className="Number">{num}</button>
+							))}
+						</div>
+						<div className="Operators">
+							{ops.map((op) => (
+								<button className="Operator">{op}</button>
+							))}
+						</div>
 					</div>
 				</div>
 			</div>
