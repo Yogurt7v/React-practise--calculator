@@ -6,20 +6,17 @@ const nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const ops = ['+', '-', '*', '/'];
 export const App = () => {
 	let op = null;
-	let [startNum, setStartNum] = useState(0);
-	// setTimeout(() => {
-	// 	setStartNum(Math.random());
-	// }, 1000);
+	let [displayNum, setDisplayNum] = useState(0);
 
 	const resetNumber = () => {
-		setStartNum(0);
+		setDisplayNum(0);
 	};
 
 	const choseNumber = (event) => {
-		if (startNum === 0) {
-			setStartNum(event.target.id);
+		if (event.target.id === '') {
+			setDisplayNum(displayNum);
 		} else {
-			setStartNum(event.target.id);
+			setDisplayNum(event.target.id);
 		}
 	};
 
@@ -47,7 +44,7 @@ export const App = () => {
 			<header className="App-header">Calculator</header>
 			<div className="Calculator">
 				<div className="Container">
-					<div className="Display">{startNum}</div>
+					<div className="Display">{displayNum}</div>
 					<div className="Clear" onClick={resetNumber}>
 						<button className="Clear">C</button>
 					</div>

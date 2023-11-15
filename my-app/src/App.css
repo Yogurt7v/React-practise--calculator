@@ -2,13 +2,16 @@ body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background-color: #adabab;
+
+	background-color: #00dbde;
+	background-image: linear-gradient(90deg, #00dbde 0%, #fc00ff 100%);
 }
 
 .App-header {
 	text-align: center;
 	padding: 10px;
 	color: blueviolet;
+	opacity: 0.4;
 	font-size: 26px;
 	font-weight: 700;
 	font-style: italic;
@@ -20,7 +23,9 @@ body {
 }
 
 .Calculator {
+	margin-top: 80px;
 	margin-left: calc(50% - 200px);
+	opacity: 0.9;
 	width: 400px;
 	height: 600px;
 	border: 1px solid rgb(74, 74, 74);
@@ -40,7 +45,7 @@ body {
 	display: flex;
 	flex-direction: row-reverse;
 	margin: 10px 0 40px 0;
-	padding: 5px 20px;
+	padding: 15px 25px;
 	font-size: 25px;
 	font-weight: 700;
 	width: 300px;
