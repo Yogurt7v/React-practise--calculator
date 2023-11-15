@@ -1,24 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { createContext, createElement } from 'react';
 
 export const App = () => {
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>
-					Lets code! <code>src/App.js</code> and save to reload.
-				</p>
-				<a
-					className="App-link"
-					href="https://reactjs.org"
-					target="_blank"
-					rel="noopener noreferrer"
-				>
-					Learn React
-				</a>
-			</header>
-		</div>
+		<>
+			<header className="App-header">Calculator</header>
+			<div className="Container">
+				<div className="Display">Display</div>
+				<div className="TwoBox">
+					<div className="Numbers">Numbers</div>
+					<div className="Operators">Operators</div>
+				</div>
+			</div>
+		</>
 	);
 };
