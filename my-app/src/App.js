@@ -1,10 +1,11 @@
 import './App.css';
 import { useState } from 'react';
-import React, { createContext, createElement } from 'react';
+// import React, { createContext, createElement } from 'react';
 
 const nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const ops = ['+', '-', '*', '/'];
 export const App = () => {
+	let op = null;
 	let [startNum, setStartNum] = useState(0);
 	// setTimeout(() => {
 	// 	setStartNum(Math.random());
@@ -23,7 +24,8 @@ export const App = () => {
 	};
 
 	const choseOperator = (event) => {
-		console.log(event.target.id);
+		op = event.target.id;
+		console.log(op);
 		// switch (event.target.id) {
 		// 	case '+':
 		// 		startNum ;
