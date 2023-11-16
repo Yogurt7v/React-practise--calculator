@@ -6,6 +6,7 @@ const nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
 const ops = ['+', '-', '*', '/'];
 let arr = [];
 let res; // можно и без этого
+let color = 'black';
 export const App = () => {
 	let [displayNum, setDisplayNum] = useState(0);
 
@@ -13,13 +14,16 @@ export const App = () => {
 		if (event.target.id === 'Clear') {
 			setDisplayNum('0');
 			arr = [];
+			color = 'black';
 		}
 		if (nums.includes(event.target.id)) {
 			setDisplayNum(event.target.id);
 			arr.push(event.target.id);
+			color = 'black';
 		}
 		if (ops.includes(event.target.id)) {
 			arr.push(event.target.id);
+			color = 'black';
 		}
 		if (event.target.id === 'Calculate') {
 			switch (arr[1]) {
@@ -39,6 +43,7 @@ export const App = () => {
 					setDisplayNum('Error');
 					break;
 			}
+			color = 'red';
 			setDisplayNum(res);
 		}
 	};
@@ -50,7 +55,9 @@ export const App = () => {
 			</header>
 			<div className="Calculator">
 				<div className="Container" onClick={Result}>
-					<div className="Display">{displayNum}</div>
+					<div className="Display" style={{ color: color }}>
+						{displayNum}
+					</div>
 					<div className="Clear">
 						<button className="Clear" id="Clear">
 							Clear
